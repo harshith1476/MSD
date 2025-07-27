@@ -28,13 +28,6 @@ text
 ├── keyboard.html        # Animated laptop keyboard
 ├── Resume.html          # Professional resume template
 └── README.md            # Project documentation
-💻 How to Run
-Clone the repository:
-
-bash
-git clone https://github.com/yourusername/web-components.git
-Open any HTML file in your browser
-
 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
