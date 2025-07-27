@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Laptop Keyboard Layout</title>
+  <style>
+    body {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 2em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .keyboard {
+      background: #444;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      user-select: none;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+    .key {
+      background: #666;
+      border-radius: 5px;
+      border: 1px solid #555;
+      box-shadow: inset 0 -3px 5px rgba(0,0,0,0.5);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 8px;
+      margin: 3px;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      flex-shrink: 0;
+    }
+    /* Different widths for special keys */
+    .key.wide { width: 60px; }
+    .key.wider { width: 90px; }
+    .key.space { width: 300px; }
+    .key.tiny { padding: 12px 4px; width: 35px; }
+
+    .key:hover {
+      background: #00aaff;
+      box-shadow: 0 4px 10px #00aaff;
+      transform: translateY(-2px);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="keyboard">
+    <!-- Row 1: Function keys -->
+    <div class="row">
+      <div class="key tiny">Esc</div>
+      <div class="key tiny">F1</div>
+      <div class="key tiny">F2</div>
+      <div class="key tiny">F3</div>
+      <div class="key tiny">F4</div>
+      <div class="key tiny">F5</div>
+      <div class="key tiny">F6</div>
+      <div class="key tiny">F7</div>
+      <div class="key tiny">F8</div>
+      <div class="key tiny">F9</div>
+      <div class="key tiny">F10</div>
+      <div class="key tiny">F11</div>
+      <div class="key tiny">F12</div>
+      <div class="key tiny">PrtSc</div>
+      <div class="key tiny">Del</div>
+    </div>
+    <!-- Row 2: Number row -->
+    <div class="row">
+      <div class="key tiny">~</div>
+      <div class="key tiny">1</div>
+      <div class="key tiny">2</div>
+      <div class="key tiny">3</div>
+      <div class="key tiny">4</div>
+      <div class="key tiny">5</div>
+      <div class="key tiny">6</div>
+      <div class="key tiny">7</div>
+      <div class="key tiny">8</div>
+      <div class="key tiny">9</div>
+      <div class="key tiny">0</div>
+      <div class="key tiny">-</div>
+      <div class="key tiny">=</div>
+      <div class="key wider">Backspace</div>
+    </div>
+    <!-- Row 3: QWERTY row -->
+    <div class="row">
+      <div class="key wide">Tab</div>
+      <div class="key tiny">Q</div>
+      <div class="key tiny">W</div>
+      <div class="key tiny">E</div>
+      <div class="key tiny">R</div>
+      <div class="key tiny">T</div>
+      <div class="key tiny">Y</div>
+      <div class="key tiny">U</div>
+      <div class="key tiny">I</div>
+      <div class="key tiny">O</div>
+      <div class="key tiny">P</div>
+      <div class="key tiny">[</div>
+      <div class="key tiny">]</div>
+      <div class="key tiny">\</div>
+    </div>
+    <!-- Row 4: Home row -->
+    <div class="row">
+      <div class="key wider">Caps Lock</div>
+      <div class="key tiny">A</div>
+      <div class="key tiny">S</div>
+      <div class="key tiny">D</div>
+      <div class="key tiny">F</div>
+      <div class="key tiny">G</div>
+      <div class="key tiny">H</div>
+      <div class="key tiny">J</div>
+      <div class="key tiny">K</div>
+      <div class="key tiny">L</div>
+      <div class="key tiny">;</div>
+      <div class="key tiny">'</div>
+      <div class="key wider">Enter</div>
+    </div>
+    <!-- Row 5: Bottom row -->
+    <div class="row">
+      <div class="key wider">Shift</div>
+      <div class="key tiny">Z</div>
+      <div class="key tiny">X</div>
+      <div class="key tiny">C</div>
+      <div class="key tiny">V</div>
+      <div class="key tiny">B</div>
+      <div class="key tiny">N</div>
+      <div class="key tiny">M</div>
+      <div class="key tiny">,</div>
+      <div class="key tiny">.</div>
+      <div class="key tiny">/</div>
+      <div class="key wider">Shift</div>
+    </div>
+    <!-- Row 6: Bottom control keys -->
+    <div class="row">
+      <div class="key wide">Ctrl</div>
+      <div class="key wide">Win</div>
+      <div class="key wide">Alt</div>
+      <div class="key space">Space</div>
+      <div class="key wide">AltGr</div>
+      <div class="key wide">Fn</div>
+      <div class="key wide">Menu</div>
+      <div class="key wide">Ctrl</div>
+    </div>
+    <!-- Row 7: Arrow keys -->
+    <div class="row" style="justify-content:center; margin-top: 10px;">
+      <div class="key wide">Insert</div>
+      <div class="key wide">Home</div>
+      <div class="key wide">PageUp</div>
+      <div style="width: 20px;"></div>
+      <div class="key wide">Delete</div>
+      <div class="key wide">End</div>
+      <div class="key wide">PageDown</div>
+    </div>
+    <div class="row" style="justify-content:center;">
+      <div style="width: 120px;"></div>
+      <div class="key tiny">↑</div>
+    </div>
+    <div class="row" style="justify-content:center;">
+      <div class="key tiny">←</div>
+      <div class="key tiny">↓</div>
+      <div class="key tiny">→</div>
+    </div>
+  </div>
+</body>
+</html>
